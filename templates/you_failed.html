@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+	{% block body %}
+	<form>
+		  <h1>Fail!</h1>
+		  You have entered {{num_of_invalid}}<br>
+		  Invalid words {{invalid_words}}<br>
+		  In "{{source_word}}"<br><br>
+
+		  <input type="BUTTON" name="play again" onclick="window.location.href='http://127.0.0.1:5000/'" value="Play again?">
+	</form>
+	{% endblock %}
+	

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+	 
+	{% block body %}	
+	<h1>{{source_word}}</h1><br>
+	<form action='/processform' method='POST'>
+          <br>
+		  <input type="hidden" name="hidden_source_word" value={{source_word}}>
+		  <input type="hidden" name="hidden_time_stamp" value={{time_stamp}}>
+		  Word1: <input type="TEXT" name="word1" autocomplete="off" required> <br>
+          Word2: <input type="TEXT" name="word2" autocomplete="off" required> <br>
+		  Word3: <input type="TEXT" name="word3" autocomplete="off" required> <br>
+		  Word4: <input type="TEXT" name="word4" autocomplete="off" required> <br>
+		  Word5: <input type="TEXT" name="word5" autocomplete="off" required> <br>
+		  Word6: <input type="TEXT" name="word6" autocomplete="off" required> <br>
+		  Word7: <input type="TEXT" name="word7" autocomplete="off" required> <br>
+		  <br><input type="SUBMIT"> <br>
+	</form>
+	{% endblock %}
+	
